@@ -3,6 +3,12 @@
 All notable changes to fldigi-mt63-core. Versions follow semantic versioning; the contract
 tag `mt63-c1` changes only with an incompatible API change.
 
+## 0.1.1 - 2026-10-17
+
+- The real-valued two-pole integrator cites the lines of `dsp.h` it ports (722-734) within
+  the range wave-owl's frozen Python receiver cited (wave-owl citation gate, AC-840.3). No
+  functional change.
+
 ## 0.1.0 - 2026-10-17
 
 First release, for wave-owl change `add-fldigi-mt63-core` (umbrella

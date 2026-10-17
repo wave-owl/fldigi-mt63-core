@@ -29,10 +29,10 @@
 extern "C" {
 #endif
 
-#define FMT63_VERSION_STRING "0.1.0"
+#define FMT63_VERSION_STRING "0.1.1"
 #define FMT63_ABI 1
 
-/* "fldigi-mt63-core 0.1.0 contract=mt63-c1 abi=1 tx=1". Static string. The contract tag
+/* "fldigi-mt63-core 0.1.1 contract=mt63-c1 abi=1 tx=1". Static string. The contract tag
  * changes only with an incompatible API change; tx=1 announces the transmitter. */
 const char *fmt63_version(void);
 int fmt63_abi(void);                    /* FMT63_ABI */

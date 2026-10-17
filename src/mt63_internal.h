@@ -90,7 +90,7 @@ static inline void mt63_lowpass2_coeff(int IntegLen, double *W1, double *W2, dou
     *W5 = 5.0 / IntegLen;
 }
 
-/* dspLowPass2 for a real input (dsp.h:722-735) */
+/* dspLowPass2 for a real input (dsp.h:722-734) */
 static inline void mt63_lowpass2(double Inp, double *Mid, double *Out, double W1, double W2,
                                  double W5)
 {

@@ -144,7 +144,7 @@ All declarations are in `include/fldigi_mt63.h`.
 
 | Function | Description |
 |---|---|
-| `fmt63_version()`, `fmt63_abi()` | `"fldigi-mt63-core 0.1.0 contract=mt63-c1 abi=1 tx=1"`, 1 |
+| `fmt63_version()`, `fmt63_abi()` | `"fldigi-mt63-core 0.1.1 contract=mt63-c1 abi=1 tx=1"`, 1 |
 | `fmt63_submode_count()`, `fmt63_submode_at(i)`, `fmt63_submode_find(name)` | The 6 submodes (table above); case-insensitive, also fldigi's short names (`MT63-1KL`). |
 | `fmt63_rx_create(const fmt63_rx_config *)` | `submode`, `carrier_hz`, `long_integration` (32 instead of 16 symbols), `no_8bit` (raw codes), `squelch` (0 off, else FEC s/n threshold). NULL for an unknown submode or a carrier out of range. |
 | `fmt63_rx_process(rx, x, n, text, max)` | Feed 8 kHz samples; returns the bytes fldigi prints (overflow dropped and counted, `fmt63_rx_dropped`). |
