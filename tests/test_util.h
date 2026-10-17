@@ -63,6 +63,8 @@ typedef struct {
 
 static inline void sbuf_add(sbuf *b, const double *x, size_t n)
 {
+    if (n == 0)
+        return;
     if (b->n + n > b->cap) {
         b->cap = (b->n + n) * 2 + 1024;
         b->x = (double *)realloc(b->x, b->cap * sizeof(double));
