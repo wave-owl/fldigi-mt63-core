@@ -199,7 +199,7 @@ static void check_case(const char *stem, const char *sname, const char *key, int
 
     for (s = 0; s < 3; s++) {
         fmt63_rx *rx;
-        size_t nx, got, glen;
+        size_t nx, got, glen = 0;
         /* the noisy inputs are built from fldigi's vector where it is stored, else from
          * the port's (identical on the reference platform) */
         double *x = noisy(ref ? ref : pcm, ref ? reflen : n, FMT63_RATE, s,
