@@ -1,0 +1,27 @@
+diff --git a/src/include/dsp.h b/src/include/dsp.h
+index 41b4347f..8107d9a6 100644
+--- a/src/include/dsp.h
++++ b/src/include/dsp.h
+@@ -180,7 +180,9 @@ template <class type> int dspSeq<type>::EnsureSpace(int ReqSpace)
+ { 
+ 	if (ReqSpace <= Space) 
+ 		return 0;
++	type *Old = Data;
+ 	Data = new type[ReqSpace * sizeof(type)];
++	if (Old && Data) memcpy(Data, Old, Space * sizeof(type));
+ 	if (Data == NULL) { 
+ 		Space = Len = 0; 
+ 		return -1; 
+diff --git a/src/mt63/mt63base.cxx b/src/mt63/mt63base.cxx
+index 0b402edf..0ed5dac2 100644
+--- a/src/mt63/mt63base.cxx
++++ b/src/mt63/mt63base.cxx
+@@ -1353,7 +1353,7 @@ void MT63rx::DataProcess(dspCmpx *EvenSlice, dspCmpx *OddSlice, double FreqOfs,
+ //  printf("Symbol vectors:\n");
+ 	incr = (TimeDist * DataCarrSepar) & WindowLenMask;	// correct FFT dspPhase shift
+ 	p = (TimeDist * DataScanFirst) & WindowLenMask;	// due to time shift by
+-	for (c = DataScanFirst, i = 0; i < DataScanLen; ) {	// TimeDist
++	for (c = DataScanFirst & WindowLenMask, i = 0; i < DataScanLen; ) {	// TimeDist
+ // printf("%2d,%3d:",i,c);
+ // printf("  [%6.3f,%6.3f]  [%6.3f,%6.3f]",
+ //	 FFTbuff[c].re,FFTbuff[c].im,
