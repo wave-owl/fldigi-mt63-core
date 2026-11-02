@@ -274,3 +274,12 @@ bench, build a second binary with `tests/golden/fldigi-defined-ub.patch`, rerun
 GPL-3.0-or-later, as fldigi. MT63 by Pawel Jalocha SP9VRC (1999-2004, MT63ASC and the C++
 modem), adapted to fldigi by Dave Freese W1HKJ (2007-2011). The C port and the tests:
 Gerolf Ziegenhain DG6FL, 2026. See `CHANGELOG.md`.
+
+<!-- wave-owl-source-sbom-docs:start -->
+## Source SBOMs
+
+Every published release, including prereleases, receives automatically generated
+CycloneDX JSON and readable documentation. See the [initial source report](SBOM.md),
+[CycloneDX JSON](SBOM.cdx.json) and [release policy](SBOM-POLICY.md) for scope,
+release assets, provenance declarations and reproduction instructions.
+<!-- wave-owl-source-sbom-docs:end -->

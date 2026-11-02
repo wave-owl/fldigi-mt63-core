@@ -1,0 +1,63 @@
+{
+  "gitlinks": {},
+  "vendored": [
+    {
+      "path": "src/mt63_dsp.c",
+      "repository": "wave-owl/fldigi",
+      "commit": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d",
+      "licenses": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "README.md"
+      ]
+    },
+    {
+      "path": "src/mt63_tables.c",
+      "repository": "wave-owl/fldigi",
+      "commit": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d",
+      "licenses": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "README.md"
+      ]
+    },
+    {
+      "path": "src/mt63_rx.c",
+      "repository": "wave-owl/fldigi",
+      "commit": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d",
+      "licenses": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "README.md"
+      ]
+    },
+    {
+      "path": "src/mt63_tx.c",
+      "repository": "wave-owl/fldigi",
+      "commit": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d",
+      "licenses": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "README.md"
+      ]
+    },
+    {
+      "path": "src/mt63_common.c",
+      "repository": "wave-owl/fldigi",
+      "commit": "e7c3ab3709ad62a7d91829364eb48a05fa325c0d",
+      "licenses": [
+        "LICENSE"
+      ],
+      "evidence": [
+        "README.md"
+      ]
+    }
+  ],
+  "references": [],
+  "models": [],
+  "external_libraries": []
+}
