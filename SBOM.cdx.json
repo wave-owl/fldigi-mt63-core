@@ -13,7 +13,7 @@
           "content": "8c7fb29716adcd70742921936d761c244dd0097de15f6fb506b4b464d9e486ee"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/fldigi-mt63-core/.source-input/.github/workflows/ci.yml",
+      "name": "tracked-source/.github/workflows/ci.yml",
       "type": "file"
     },
     {
